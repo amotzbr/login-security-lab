@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local run artifacts
+attempts.log
+users.json
+users_db.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
