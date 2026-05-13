@@ -18,7 +18,7 @@ HASH_MODE = "sha256_salt"
 #HASH_MODE = "bcrypt"
 
 # ======= Seed / group =======
-GROUP_SEED = "REDACTED"
+GROUP_SEED = os.environ.get("GROUP_SEED", "")
 
 # ======= Pepper =======
 PEPPER = os.environ.get("PEPPER", "")
@@ -49,3 +49,4 @@ ACCOUNT_LOCK_DURATION_SECONDS = 900 # 15 min lock
 ENABLE_CAPTCHA = True
 CAPTCHA_FAIL_THRESHOLD = 30
 CAPTCHA_TOKEN_TTL_SECONDS = 300
+
